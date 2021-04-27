@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AIXMBasicMessage xmlns="http://www.aixm.aero/schema/5.1/message"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gml="http://www.opengis.net/gml/3.2"
+    xmlns:aixm="http://www.aixm.aero/schema/5.1" xmlns:gmd="http://www.isotc211.org/2005/gmd"
+    xmlns:xlink="http://www.w3.org/1999/xlink" gml:id="uuid.2018a2ac-c751-4da3-b3d4-e6ce86bd81b5"
+    xsi:schemaLocation="http://www.aixm.aero/schema/5.1/message http://www.aixm.aero/schema/5.1/message/AIXM_BasicMessage.xsd">
+    
+    <!-- Airport-->
+    
+    <hasMember>
+        <aixm:AirportHeliport gml:id="ID_001">
+            <gml:identifier codeSpace="urn:uuid:">347cf44f-9651-475d-a762-3c06be180f67</gml:identifier>
+            <aixm:timeSlice>
+                <aixm:AirportHeliportTimeSlice gml:id="ID_002">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_003">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:designator>IASI</aixm:designator>
+                    <aixm:name>IASI</aixm:name>
+                    <aixm:locationIndicatorICAO>LRIA</aixm:locationIndicatorICAO>
+                    <aixm:designatorIATA>IAS</aixm:designatorIATA>
+                    <aixm:fieldElevation uom="FT">411</aixm:fieldElevation>
+                    <aixm:magneticVariation>5</aixm:magneticVariation>
+                    <aixm:dateMagneticVariation>2014</aixm:dateMagneticVariation>
+                    <aixm:referenceTemperature uom="C">28.7</aixm:referenceTemperature>
+                    <aixm:transitionAltitude uom="FT">3000</aixm:transitionAltitude>
+                    
+                    <aixm:servedCity> 
+                        <aixm:City gml:id="ID_004">
+                            <aixm:name>IASI</aixm:name>
+                        </aixm:City>
+                    </aixm:servedCity> 
+                    <aixm:ARP>
+                        <aixm:ElevatedPoint gml:id="ID_005" srsName="urn:ogc:def:crs:EPSG::4326">
+                            <gml:pos>47.180278 27.620833</gml:pos>
+                            <aixm:elevation uom="FT">105</aixm:elevation>
+                        </aixm:ElevatedPoint>
+                    </aixm:ARP>
+                </aixm:AirportHeliportTimeSlice>
+            </aixm:timeSlice>
+        </aixm:AirportHeliport>
+    </hasMember>
+    
+    <!-- runway  -->
+    
+    <hasMember>
+        <aixm:Runway gml:id="ID_011">
+            <gml:identifier codeSpace="urn:uuid:">dfd63094-49fc-4453-b20d-854e17384c05</gml:identifier>
+            <aixm:timeSlice>
+                <aixm:RunwayTimeSlice gml:id="ID_012">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_013">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    <!-- adde here the Runway details -->
+                    <aixm:designator>RWY-14/32</aixm:designator>
+                    <aixm:type>RWY</aixm:type>
+                    <aixm:nominalLength uom="M">2400</aixm:nominalLength>
+                    <aixm:nominalWidth uom="M">45</aixm:nominalWidth>
+                    <aixm:lengthStrip uom="M">2520</aixm:lengthStrip>
+                    <aixm:widthStrip uom="M">300</aixm:widthStrip>
+                    
+                    <aixm:surfaceProperties>
+                        <aixm:SurfaceCharacteristics gml:id="ID_014">
+                            <aixm:composition>ASPH</aixm:composition>
+                            <aixm:classPCN>99</aixm:classPCN>
+                            <aixm:pavementTypePCN>FLEXIBLE</aixm:pavementTypePCN>
+                            <aixm:pavementSubgradePCN>C</aixm:pavementSubgradePCN>
+                            <aixm:maxTyrePressurePCN>W</aixm:maxTyrePressurePCN>
+                            <aixm:evaluationMethodPCN>TECH</aixm:evaluationMethodPCN>
+                        </aixm:SurfaceCharacteristics>
+                    </aixm:surfaceProperties>
+                    
+                    <aixm:associatedAirportHeliport xlink:href="347cf44f-9651-475d-a762-3c06be180f67"/>
+                    
+                </aixm:RunwayTimeSlice>
+            </aixm:timeSlice>
+        </aixm:Runway>
+    </hasMember>
+    
+   
+    <!-- Geometric representation of the runway -->
+    
+    <hasMember>
+        <aixm:RunwayElement gml:id="ID_015">
+            <aixm:timeSlice>
+                <aixm:RunwayElementTimeSlice gml:id="ID_016">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_017">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:associatedRunway xlink:href="dfd63094-49fc-4453-b20d-854e17384c05"/>
+                    <aixm:extent>
+                        <aixm:ElevatedSurface gml:id="ID021" srsName="urn:ogc:def:crs:EPSG::4326">
+                            <gml:patches>
+                                <gml:PolygonPatch>
+                                    <gml:exterior>
+                                        <gml:Ring>
+                                            <gml:curveMember>
+                                                <gml:Curve gml:id="ID022">
+                                                    <gml:segments>
+                                                        <gml:GeodesicString>
+                                                            <gml:posList>
+                                                                47.186167 27.615014 47.186 27.614472 47.171389 27.625061 47.1715 27.625564          
+                                                            </gml:posList> 
+                                                        </gml:GeodesicString>
+                                                    </gml:segments>
+                                                </gml:Curve>
+                                            </gml:curveMember>
+                                        </gml:Ring>
+                                    </gml:exterior>
+                                </gml:PolygonPatch>
+                            </gml:patches>
+                        </aixm:ElevatedSurface>
+                    </aixm:extent>
+                </aixm:RunwayElementTimeSlice>
+            </aixm:timeSlice>
+        </aixm:RunwayElement>
+    </hasMember>
+    
+    <!-- runway 14 direction -->
+    <hasMember>
+        <aixm:RunwayDirection gml:id="ID_031">
+            <gml:identifier codeSpace="urn:uuid:">9a6ea17e-65fc-4188-828e-c5e3c097a928</gml:identifier>
+            <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="ID_032">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_033">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>                        
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:designator>14</aixm:designator>
+                    <aixm:trueBearing>148.85</aixm:trueBearing>
+                    <aixm:elevationTDZ uom="FT">397.3</aixm:elevationTDZ>
+                    <aixm:usedRunway xlink:href="dfd63094-49fc-4453-b20d-854e17384c05"/>
+                    
+                </aixm:RunwayDirectionTimeSlice>
+            </aixm:timeSlice>
+        </aixm:RunwayDirection>
+    </hasMember>
+    
+    <!-- centerline of runway 14, for role=THR-->
+    <hasMember>
+        <aixm:RunwayCentrelinePoint gml:id="ID_041">
+            
+            <aixm:timeSlice>
+                <aixm:RunwayCentrelinePointTimeSlice gml:id="ID_042">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_043">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:role>THR</aixm:role>
+                    <aixm:location>
+                        <aixm:ElevatedPoint gml:id="ID_044" srsName="urn:ogc:def:crs:EPSG::4326">
+                            <gml:pos>47.112210 27.364571</gml:pos>
+                            <aixm:elevation uom="FT">411.1</aixm:elevation>
+                            <aixm:geoidUndulation uom="FT">106.1</aixm:geoidUndulation>
+                        </aixm:ElevatedPoint>
+                    </aixm:location>
+                    
+                 
+                    <aixm:onRunway xlink:href="9a6ea17e-65fc-4188-828e-c5e3c097a928"/>
+                    
+                    <!-- TORA -->                    
+                    <aixm:associatedDeclaredDistance>
+                        <aixm:RunwayDeclaredDistance gml:id="ID_045">
+                            <aixm:type>TORA</aixm:type>
+                            <aixm:declaredValue>
+                                <aixm:RunwayDeclaredDistanceValue gml:id="ID_046">
+                                    <aixm:distance uom="M">2400</aixm:distance>
+                                </aixm:RunwayDeclaredDistanceValue>
+                            </aixm:declaredValue>
+                        </aixm:RunwayDeclaredDistance>
+                    </aixm:associatedDeclaredDistance>
+                    
+                    <!-- TODA -->      
+                    <aixm:associatedDeclaredDistance>
+                        <aixm:RunwayDeclaredDistance gml:id="ID_047">
+                            <aixm:type>TODA</aixm:type>
+                            <aixm:declaredValue>
+                                <aixm:RunwayDeclaredDistanceValue gml:id="ID_048">
+                                    <aixm:distance uom="M">2550</aixm:distance>
+                                </aixm:RunwayDeclaredDistanceValue>
+                            </aixm:declaredValue>
+                        </aixm:RunwayDeclaredDistance>
+                    </aixm:associatedDeclaredDistance>
+                    
+                    <!-- ASDA -->      
+                    <aixm:associatedDeclaredDistance>
+                        <aixm:RunwayDeclaredDistance gml:id="ID_049">
+                            <aixm:type>ASDA</aixm:type>
+                            <aixm:declaredValue>
+                                <aixm:RunwayDeclaredDistanceValue gml:id="ID_0490">
+                                    <aixm:distance uom="M">2400</aixm:distance>
+                                </aixm:RunwayDeclaredDistanceValue>
+                            </aixm:declaredValue>
+                        </aixm:RunwayDeclaredDistance>
+                    </aixm:associatedDeclaredDistance>
+                    
+                    <!-- LDA -->      
+                    <aixm:associatedDeclaredDistance>
+                        <aixm:RunwayDeclaredDistance gml:id="ID_050">
+                            <aixm:type>LDA</aixm:type>
+                            <aixm:declaredValue>
+                                <aixm:RunwayDeclaredDistanceValue gml:id="ID_0500">
+                                    <aixm:distance uom="M">2400</aixm:distance>
+                                </aixm:RunwayDeclaredDistanceValue>
+                            </aixm:declaredValue>
+                        </aixm:RunwayDeclaredDistance>
+                    </aixm:associatedDeclaredDistance>
+                    
+                    
+                </aixm:RunwayCentrelinePointTimeSlice>
+            </aixm:timeSlice>
+        </aixm:RunwayCentrelinePoint>
+    </hasMember>
+    
+    <!-- centerline of runway 14, for role=START_RUN -->
+    
+    <hasMember>
+        <aixm:RunwayCentrelinePoint gml:id="ID_121">
+            <aixm:timeSlice>
+                <aixm:RunwayCentrelinePointTimeSlice gml:id="ID_122">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_123">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:role>START_RUN</aixm:role>
+                    
+                    <aixm:location>
+                        <aixm:ElevatedPoint gml:id="ID_124" srsName="urn:ogc:def:crs:EPSG::4326">
+                            <gml:pos>47.189472 27.612697</gml:pos>
+                            <aixm:elevation uom="FT">411.1</aixm:elevation>
+                        </aixm:ElevatedPoint>
+                    </aixm:location>
+                    
+                    <!-- association with RWY Direction -->
+                    <aixm:onRunway xlink:href="9a6ea17e-65fc-4188-828e-c5e3c097a928"/>
+                    
+                    <!-- TORA -->                    
+                    <aixm:associatedDeclaredDistance>
+                        <aixm:RunwayDeclaredDistance gml:id="ID_125">
+                            <aixm:type>TORA</aixm:type>
+                            <aixm:declaredValue>
+                                <aixm:RunwayDeclaredDistanceValue gml:id="ID_126">
+                                    <aixm:distance uom="M">2400</aixm:distance>
+                                </aixm:RunwayDeclaredDistanceValue>
+                            </aixm:declaredValue>
+                        </aixm:RunwayDeclaredDistance>
+                    </aixm:associatedDeclaredDistance>
+                    
+                    <!-- TODA -->      
+                    <aixm:associatedDeclaredDistance>
+                        <aixm:RunwayDeclaredDistance gml:id="ID_127">
+                            <aixm:type>TODA</aixm:type>
+                            <aixm:declaredValue>
+                                <aixm:RunwayDeclaredDistanceValue gml:id="ID_128">
+                                    <aixm:distance uom="M">2550</aixm:distance>
+                                </aixm:RunwayDeclaredDistanceValue>
+                            </aixm:declaredValue>
+                        </aixm:RunwayDeclaredDistance>
+                    </aixm:associatedDeclaredDistance>
+                    
+                    <!-- ASDA -->      
+                    <aixm:associatedDeclaredDistance>
+                        <aixm:RunwayDeclaredDistance gml:id="ID_129">
+                            <aixm:type>ASDA</aixm:type>
+                            <aixm:declaredValue>
+                                <aixm:RunwayDeclaredDistanceValue gml:id="ID_130">
+                                    <aixm:distance uom="M">2400</aixm:distance>
+                                </aixm:RunwayDeclaredDistanceValue>
+                            </aixm:declaredValue>
+                        </aixm:RunwayDeclaredDistance>
+                    </aixm:associatedDeclaredDistance>     
+                    
+                    
+                </aixm:RunwayCentrelinePointTimeSlice>
+            </aixm:timeSlice>
+        </aixm:RunwayCentrelinePoint>
+    </hasMember>
+    
+    <!-- runway 32 direction -->
+    <hasMember>
+        <aixm:RunwayDirection gml:id="ID_0311">
+            <gml:identifier codeSpace="urn:uuid:">b36962a7-9b52-4d9e-b1ea-67faac905fdd</gml:identifier>
+            <aixm:timeSlice>
+                <aixm:RunwayDirectionTimeSlice gml:id="ID_0322">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_0333">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>                        
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:designator>32</aixm:designator>
+                    <aixm:trueBearing>328.86</aixm:trueBearing>
+                    <aixm:usedRunway xlink:href="dfd63094-49fc-4453-b20d-854e17384c05"/>
+                    
+                </aixm:RunwayDirectionTimeSlice>
+            </aixm:timeSlice>
+        </aixm:RunwayDirection>
+    </hasMember>
+    
+    <!-- centerline of runway 32, for role=THR-->
+    <hasMember>
+        <aixm:RunwayCentrelinePoint gml:id="ID_051"> 
+            <aixm:timeSlice>
+                <aixm:RunwayCentrelinePointTimeSlice gml:id="ID_052">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_053">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:role>THR</aixm:role>
+                    
+                    <aixm:location>
+                        <aixm:ElevatedPoint gml:id="ID_054" srsName="urn:ogc:def:crs:EPSG::4326">
+                            <gml:pos>47.171011 27.629108</gml:pos>
+                            <aixm:elevation uom="FT">332.3</aixm:elevation>
+                            <aixm:geoidUndulation uom="FT">106.1</aixm:geoidUndulation>
+                        </aixm:ElevatedPoint>
+                    </aixm:location>
+                   
+                    <aixm:onRunway xlink:href="b36962a7-9b52-4d9e-b1ea-67faac905fdd"/>
+                    
+                    <!-- TORA -->                    
+                    <aixm:associatedDeclaredDistance>
+                        <aixm:RunwayDeclaredDistance gml:id="ID_055">
+                            <aixm:type>TORA</aixm:type>
+                            <aixm:declaredValue>
+                                <aixm:RunwayDeclaredDistanceValue gml:id="ID_056">
+                                    <aixm:distance uom="M">2400</aixm:distance>
+                                </aixm:RunwayDeclaredDistanceValue>
+                            </aixm:declaredValue>
+                        </aixm:RunwayDeclaredDistance>
+                    </aixm:associatedDeclaredDistance>
+                    
+                    <!-- TODA -->      
+                    <aixm:associatedDeclaredDistance>
+                        <aixm:RunwayDeclaredDistance gml:id="ID_057">
+                            <aixm:type>TODA</aixm:type>
+                            <aixm:declaredValue>
+                                <aixm:RunwayDeclaredDistanceValue gml:id="ID_058">
+                                    <aixm:distance uom="M">2550</aixm:distance>
+                                </aixm:RunwayDeclaredDistanceValue>
+                            </aixm:declaredValue>
+                        </aixm:RunwayDeclaredDistance>
+                    </aixm:associatedDeclaredDistance>
+                    
+                    <!-- ASDA -->      
+                    <aixm:associatedDeclaredDistance>
+                        <aixm:RunwayDeclaredDistance gml:id="ID_059">
+                            <aixm:type>ASDA</aixm:type>
+                            <aixm:declaredValue>
+                                <aixm:RunwayDeclaredDistanceValue gml:id="ID_0602">
+                                    <aixm:distance uom="M">2400</aixm:distance>
+                                </aixm:RunwayDeclaredDistanceValue>
+                            </aixm:declaredValue>
+                        </aixm:RunwayDeclaredDistance>
+                    </aixm:associatedDeclaredDistance>
+                    
+                    <!-- LDA -->      
+                    <aixm:associatedDeclaredDistance>
+                        <aixm:RunwayDeclaredDistance gml:id="ID_0600">
+                            <aixm:type>LDA</aixm:type>
+                            <aixm:declaredValue>
+                                <aixm:RunwayDeclaredDistanceValue gml:id="ID_0601">
+                                    <aixm:distance uom="M">2400</aixm:distance>
+                                </aixm:RunwayDeclaredDistanceValue>
+                            </aixm:declaredValue>
+                        </aixm:RunwayDeclaredDistance>
+                    </aixm:associatedDeclaredDistance>
+                    
+                </aixm:RunwayCentrelinePointTimeSlice>
+            </aixm:timeSlice>
+        </aixm:RunwayCentrelinePoint>
+    </hasMember>
+    
+  
+    
+    <!-- centerline of runway 32, for role=START_RUN -->
+    
+    <hasMember>
+        <aixm:RunwayCentrelinePoint gml:id="ID_110">
+            <aixm:timeSlice>
+                <aixm:RunwayCentrelinePointTimeSlice gml:id="ID_111">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_112">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:role>START_RUN</aixm:role>
+                    
+                    <aixm:location>
+                        <aixm:ElevatedPoint gml:id="ID_113" srsName="urn:ogc:def:crs:EPSG::4326">
+                            <gml:pos>47.101564 27.374479</gml:pos>
+                            <aixm:elevation uom="FT">332.3</aixm:elevation>
+                        </aixm:ElevatedPoint>
+                    </aixm:location>
+            
+                    <aixm:onRunway xlink:href="b36962a7-9b52-4d9e-b1ea-67faac905fdd"/>
+                    
+                    <!-- TORA -->                    
+                    <aixm:associatedDeclaredDistance>
+                        <aixm:RunwayDeclaredDistance gml:id="ID_114">
+                            <aixm:type>TORA</aixm:type>
+                            <aixm:declaredValue>
+                                <aixm:RunwayDeclaredDistanceValue gml:id="ID_115">
+                                    <aixm:distance uom="M">2400</aixm:distance>
+                                </aixm:RunwayDeclaredDistanceValue>
+                            </aixm:declaredValue>
+                        </aixm:RunwayDeclaredDistance>
+                    </aixm:associatedDeclaredDistance>
+                    
+                    <!-- TODA -->      
+                    <aixm:associatedDeclaredDistance>
+                        <aixm:RunwayDeclaredDistance gml:id="ID_116">
+                            <aixm:type>TODA</aixm:type>
+                            <aixm:declaredValue>
+                                <aixm:RunwayDeclaredDistanceValue gml:id="ID_117">
+                                    <aixm:distance uom="M">2550</aixm:distance>
+                                </aixm:RunwayDeclaredDistanceValue>
+                            </aixm:declaredValue>
+                        </aixm:RunwayDeclaredDistance>
+                    </aixm:associatedDeclaredDistance>
+                    
+                    <!-- ASDA -->      
+                    <aixm:associatedDeclaredDistance>
+                        <aixm:RunwayDeclaredDistance gml:id="ID_118">
+                            <aixm:type>ASDA</aixm:type>
+                            <aixm:declaredValue>
+                                <aixm:RunwayDeclaredDistanceValue gml:id="ID_119">
+                                    <aixm:distance uom="M">2400</aixm:distance>
+                                </aixm:RunwayDeclaredDistanceValue>
+                            </aixm:declaredValue>
+                        </aixm:RunwayDeclaredDistance>
+                    </aixm:associatedDeclaredDistance> 
+                    
+                    
+                </aixm:RunwayCentrelinePointTimeSlice>
+            </aixm:timeSlice>
+        </aixm:RunwayCentrelinePoint>
+    </hasMember>
+    
+    
+    <!-- Taxiway ALPHA -->
+    <hasMember>
+        <aixm:Taxiway gml:id="ID_061">
+            <gml:identifier codeSpace="urn:uuid:">69e7b5d5-e5ef-48ff-9266-b5912dfdc9d1</gml:identifier>
+            <aixm:timeSlice>
+                <aixm:TaxiwayTimeSlice gml:id="ID_062">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_063">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:designator>ALPHA</aixm:designator>
+                    <aixm:width uom="M">23</aixm:width>
+                    <aixm:surfaceProperties>
+                        <aixm:SurfaceCharacteristics gml:id="ID_064">
+                            <aixm:composition>ASPH</aixm:composition>
+                            <aixm:classPCN>99</aixm:classPCN>
+                            <aixm:pavementTypePCN>FLEXIBLE</aixm:pavementTypePCN>
+                            <aixm:pavementSubgradePCN>C</aixm:pavementSubgradePCN>
+                            <aixm:maxTyrePressurePCN>W</aixm:maxTyrePressurePCN>
+                            <aixm:evaluationMethodPCN>TECH</aixm:evaluationMethodPCN>
+                        </aixm:SurfaceCharacteristics>
+                    </aixm:surfaceProperties>
+                </aixm:TaxiwayTimeSlice>
+            </aixm:timeSlice>
+        </aixm:Taxiway>
+    </hasMember>
+    <!-- geometry of TWY Alpha -->
+    <hasMember>
+        <aixm:TaxiwayElement gml:id="ID_065">
+            <aixm:timeSlice>
+                <aixm:TaxiwayElementTimeSlice gml:id="ID_066">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_067">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    <aixm:width uom="M">16</aixm:width>
+                    <aixm:associatedTaxiway xlink:href="69e7b5d5-e5ef-48ff-9266-b5912dfdc9d1"/>
+                    
+                    <aixm:extent>
+                        <aixm:ElevatedSurface gml:id="ID_068">
+                            <gml:patches>
+                                <gml:PolygonPatch>
+                                    <gml:exterior>
+                                        <gml:Ring>
+                                            <gml:curveMember>
+                                                <gml:Curve gml:id="ID_069">
+                                                    <gml:segments>
+                                                        <gml:GeodesicString>
+                                                            <gml:posList>
+                                                                47.177969 27.620303  47.177469 27.618778 47.177269 27.618931 47.177769 27.620444
+                                                            </gml:posList>
+                                                        </gml:GeodesicString>
+                                                    </gml:segments>
+                                                </gml:Curve>
+                                            </gml:curveMember>
+                                        </gml:Ring>
+                                    </gml:exterior>
+                                </gml:PolygonPatch>
+                            </gml:patches>
+                        </aixm:ElevatedSurface>
+                    </aixm:extent> 
+                    
+                </aixm:TaxiwayElementTimeSlice>
+            </aixm:timeSlice>
+        </aixm:TaxiwayElement>
+    </hasMember>
+    
+    <!-- Taxiway BRAVO -->
+    <hasMember>
+        <aixm:Taxiway gml:id="ID_070">
+            <gml:identifier codeSpace="urn:uuid:">1b868b7b-e781-41cd-ab06-976316326114 </gml:identifier>
+            <aixm:timeSlice>
+                <aixm:TaxiwayTimeSlice gml:id="ID_071">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_072">
+                            <gml:beginPosition>2020-05-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:designator>BRAVO</aixm:designator>
+                    <aixm:width uom="M">23</aixm:width>
+                    <aixm:surfaceProperties>
+                        <aixm:SurfaceCharacteristics gml:id="ID_073">
+                            <aixm:composition>CONC</aixm:composition>
+                            <aixm:classPCN>99</aixm:classPCN>
+                            <aixm:pavementTypePCN>RIGID</aixm:pavementTypePCN>
+                            <aixm:pavementSubgradePCN>D</aixm:pavementSubgradePCN>
+                            <aixm:maxTyrePressurePCN>W</aixm:maxTyrePressurePCN>
+                            <aixm:evaluationMethodPCN>TECH</aixm:evaluationMethodPCN>
+                         </aixm:SurfaceCharacteristics>
+                    </aixm:surfaceProperties>
+                </aixm:TaxiwayTimeSlice>
+            </aixm:timeSlice>
+        </aixm:Taxiway>
+    </hasMember>
+   
+      
+    <!-- geometry of TWY BRAVO -->
+    <hasMember>
+        <aixm:TaxiwayElement gml:id="ID_074">
+            <aixm:timeSlice>
+                <aixm:TaxiwayElementTimeSlice gml:id="ID_075">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_076">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    <aixm:width uom="M">23</aixm:width>
+                    <aixm:associatedTaxiway xlink:href="1b868b7b-e781-41cd-ab06-976316326114"/>
+                    
+                   
+                    <aixm:extent>
+                        <aixm:ElevatedSurface gml:id="ID_077">
+                            <gml:patches>
+                                <gml:PolygonPatch>
+                                    <gml:exterior>
+                                        <gml:Ring>
+                                            <gml:curveMember>
+                                                <gml:Curve gml:id="ID_079">
+                                                    <gml:segments>
+                                                        <gml:GeodesicString>
+                                                            <gml:posList>
+                                                                47.183575 27.616231 47.183875 27.616019 47.183656 27.615114 47.177736 27.619611 47.177867 27.619936 47.183444 27.615736
+                                                            </gml:posList>
+                                                        </gml:GeodesicString>
+                                                    </gml:segments>
+                                                </gml:Curve>
+                                            </gml:curveMember>
+                                        </gml:Ring>
+                                    </gml:exterior>
+                                </gml:PolygonPatch>
+                            </gml:patches>
+                        </aixm:ElevatedSurface>
+                    </aixm:extent> 
+                    
+                </aixm:TaxiwayElementTimeSlice>
+            </aixm:timeSlice>
+        </aixm:TaxiwayElement>
+    </hasMember>
+    
+    <!--Apron-->
+    
+    <hasMember>
+        <aixm:Apron gml:id="ID_080">
+            <gml:identifier codeSpace="urn:uuid:">5bb093c2-c1d0-4617-870a-112c9774c9d0 </gml:identifier>
+            <aixm:timeSlice>
+                <aixm:ApronTimeSlice gml:id="ID_081">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_082">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:name>APRON</aixm:name>
+                    <aixm:surfaceProperties>
+                        <aixm:SurfaceCharacteristics gml:id="ID_083">
+                           
+                                <aixm:composition>CONC</aixm:composition>
+                                <aixm:classPCN>102</aixm:classPCN>
+                                <aixm:pavementTypePCN>RIGID</aixm:pavementTypePCN>
+                                <aixm:pavementSubgradePCN>D</aixm:pavementSubgradePCN>
+                                <aixm:maxTyrePressurePCN>W</aixm:maxTyrePressurePCN>
+                                <aixm:evaluationMethodPCN>TECH</aixm:evaluationMethodPCN>
+                            
+                        </aixm:SurfaceCharacteristics>
+                    </aixm:surfaceProperties>
+                    
+                </aixm:ApronTimeSlice>
+            </aixm:timeSlice>
+        </aixm:Apron>
+    </hasMember>
+    
+    <hasMember>
+        <aixm:ApronElement gml:id="ID_084">
+            <aixm:timeSlice>
+                <aixm:ApronElementTimeSlice gml:id="ID_085">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_086">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>                        
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    <aixm:associatedApron xlink:href="5bb093c2-c1d0-4617-870a-112c9774c9d0"/>
+                    <aixm:extent>
+                        <aixm:ElevatedSurface gml:id="ID_087">
+                            <gml:patches>
+                                <gml:PolygonPatch>
+                                    <gml:exterior>
+                                        <gml:Ring>
+                                            <gml:curveMember>
+                                                <gml:Curve gml:id="ID_088">
+                                                    <gml:segments>
+                                                        <gml:GeodesicString>
+                                                            <gml:posList>
+                                                                47.177639 27.617722 47.176011 27.618889 47.176261 27.619667 47.177889 27.618472 
+                                                            </gml:posList>
+                                                        </gml:GeodesicString>
+                                                    </gml:segments>
+                                                </gml:Curve>
+                                            </gml:curveMember>
+                                        </gml:Ring>
+                                    </gml:exterior>
+                                </gml:PolygonPatch>
+                            </gml:patches>
+                        </aixm:ElevatedSurface>
+                    </aixm:extent>
+                    
+                </aixm:ApronElementTimeSlice>
+            </aixm:timeSlice>
+        </aixm:ApronElement>
+    </hasMember>
+    
+    <!-- Obstacle 1 -->
+    
+    <hasMember>
+        <aixm:VerticalStructure gml:id="VS1">
+            <aixm:timeSlice>
+                <aixm:VerticalStructureTimeSlice gml:id="VS2">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="VS3">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:type>BUILDING</aixm:type>
+                    <aixm:lighted>NO</aixm:lighted>                    
+                    <aixm:part>
+                        <aixm:VerticalStructurePart gml:id="VS4">
+                            
+                            <aixm:verticalExtent uom="FT">494</aixm:verticalExtent>
+                            <aixm:horizontalProjection_location>
+                                <aixm:ElevatedPoint gml:id="VS5">
+                                    <gml:pos>47.197883 27.60975</gml:pos>
+                                </aixm:ElevatedPoint>
+                            </aixm:horizontalProjection_location>
+                            
+                        </aixm:VerticalStructurePart>
+                    </aixm:part>
+                </aixm:VerticalStructureTimeSlice>
+            </aixm:timeSlice>
+        </aixm:VerticalStructure>
+    </hasMember>
+    
+    <!-- Obstacle 2 -->
+    
+    <hasMember>
+        <aixm:VerticalStructure gml:id="VS02">
+            <aixm:timeSlice>
+                <aixm:VerticalStructureTimeSlice gml:id="VS6">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="VS7">
+                            <gml:beginPosition>2020-04-25T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:type>TREE</aixm:type>
+                    <aixm:lighted>NO</aixm:lighted>                    
+                    <aixm:part>
+                        <aixm:VerticalStructurePart gml:id="VS8">
+                            
+                            <aixm:verticalExtent uom="FT">489</aixm:verticalExtent>
+                            <aixm:horizontalProjection_location>
+                                <aixm:ElevatedPoint gml:id="VS9">
+                                    <gml:pos>47.194742 27.605272</gml:pos>
+                                </aixm:ElevatedPoint>
+                            </aixm:horizontalProjection_location>
+                            
+                        </aixm:VerticalStructurePart>
+                    </aixm:part>
+                </aixm:VerticalStructureTimeSlice>
+            </aixm:timeSlice>
+        </aixm:VerticalStructure>
+    </hasMember>
+    
+    <!-- NAVAID -->
+    
+    <hasMember>
+        <aixm:Navaid gml:id="ID_091">
+            <aixm:timeSlice>
+                <aixm:NavaidTimeSlice gml:id="ID_092">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_093">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:type>ILS</aixm:type>
+                    
+                    <aixm:navaidEquipment>
+                        <aixm:NavaidComponent gml:id="localizer">
+                            <aixm:theNavaidEquipment xlink:href="a8b33d11-f948-4558-9923-1dd3b35ecf90"/>
+                        </aixm:NavaidComponent>
+                    </aixm:navaidEquipment>
+                    <aixm:navaidEquipment>
+                        <aixm:NavaidComponent gml:id="gp">
+                            <aixm:theNavaidEquipment xlink:href="68de3c30-dca4-457c-bec1-e5b612a800af"/>
+                        </aixm:NavaidComponent>
+                    </aixm:navaidEquipment>
+                </aixm:NavaidTimeSlice>
+            </aixm:timeSlice>
+        </aixm:Navaid>
+    </hasMember>
+    
+    <!-- LOCALIZER -->
+    
+    <hasMember>
+        <aixm:Localizer gml:id="ID_094">
+            <gml:identifier codeSpace="urn:uuid:">a8b33d11-f948-4558-9923-1dd3b35ecf90</gml:identifier>
+            <aixm:timeSlice>
+                <aixm:LocalizerTimeSlice gml:id="ID_095">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID_096">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:designator>IIS</aixm:designator>
+                    <aixm:name>LOC 14</aixm:name>
+                    <aixm:magneticVariation>5</aixm:magneticVariation>
+                    <aixm:dateMagneticVariation>2014</aixm:dateMagneticVariation>
+                    <aixm:location>
+                        <aixm:ElevatedPoint gml:id="ID_097">
+                            <gml:pos>47.1685 27.631333</gml:pos>
+                        </aixm:ElevatedPoint>
+                    </aixm:location>
+                    <aixm:frequency uom="MHZ">109.100</aixm:frequency>
+                    
+                </aixm:LocalizerTimeSlice>
+            </aixm:timeSlice>
+        </aixm:Localizer>
+    </hasMember>
+    
+    <!-- GLIDEPATH -->
+    
+    <hasMember>
+        <aixm:Glidepath gml:id="ID100">
+            <gml:identifier codeSpace="urn:uuid:">68de3c30-dca4-457c-bec1-e5b612a800af</gml:identifier>
+            <aixm:timeSlice>
+                <aixm:GlidepathTimeSlice gml:id="ID101">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="ID102">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:name>GP 14</aixm:name>
+                    <aixm:location>
+                        <aixm:ElevatedPoint gml:id="ID104">
+                            <gml:pos>47.185917  27.614</gml:pos>
+                        </aixm:ElevatedPoint>
+                    </aixm:location>
+                    <aixm:frequency uom="MHZ">331.400</aixm:frequency>
+                    <aixm:slope>3</aixm:slope>
+                    <aixm:rdh uom="FT">55</aixm:rdh>
+                </aixm:GlidepathTimeSlice>
+            </aixm:timeSlice>
+        </aixm:Glidepath>
+    </hasMember>
+    
+    <!--AIRSPACE-->
+    
+    <hasMember>
+        <aixm:Airspace gml:id="id200">
+            <aixm:timeSlice>
+                <aixm:AirspaceTimeSlice gml:id="id201">
+                    <gml:validTime>
+                        <gml:TimePeriod gml:id="id202">
+                            <gml:beginPosition>2020-04-30T00:00:00Z</gml:beginPosition>
+                            <gml:endPosition indeterminatePosition="unknown"/>
+                        </gml:TimePeriod>
+                    </gml:validTime>
+                    <aixm:interpretation>BASELINE</aixm:interpretation>
+                    <aixm:sequenceNumber>1</aixm:sequenceNumber>
+                    
+                    <aixm:type>CTR</aixm:type>
+                    <aixm:designator>IASI</aixm:designator>
+              
+                    <aixm:class>
+                        <aixm:AirspaceLayerClass gml:id="id203">
+                            <aixm:classification>C</aixm:classification>
+                        </aixm:AirspaceLayerClass>
+                    </aixm:class>
+                                         
+                    <aixm:geometryComponent>
+                        <aixm:AirspaceGeometryComponent gml:id="id204">
+                            <aixm:theAirspaceVolume>
+                                <aixm:AirspaceVolume gml:id="id205">
+                                    <aixm:upperLimit uom="FT">5500</aixm:upperLimit>
+                                    <aixm:upperLimitReference>STD</aixm:upperLimitReference>
+                                    <aixm:lowerLimitReference>SFC</aixm:lowerLimitReference>
+                                    <aixm:horizontalProjection>
+                                        <aixm:Surface gml:id="id206" srsName="urn:ogc:def:crs:EPSG::4326">
+                                            <gml:patches>
+                                                <gml:PolygonPatch>
+                                                    <gml:exterior>
+                                                        <gml:Ring>
+                                                             <gml:curveMember>
+                                                                 <aixm:Curve gml:id="id207">
+                                                                      <gml:segments>
+                                                                         <gml:Arc numArc="1">
+                                                                            <gml:pos>47.049444  27.961667</gml:pos>
+                                                                            <gml:pos>47 27.329444</gml:pos>
+                                                                            <gml:pos>47.445 27.537222</gml:pos>
+                                                                        </gml:Arc>
+                                                                      </gml:segments>
+                                                                  </aixm:Curve> 
+                                                             </gml:curveMember>
+                                                             <gml:curveMember>
+                                                                <aixm:Curve gml:id="id2007">
+                                                                    <gml:segments>
+                                                                        <gml:GeodesicString interpolation="geodesic">
+                                                                            <gml:posList>47.445 27.537222 47.340556 27.614722 47.226111 27.7675 47.1675 27.800833 47.111944 27.854722 47.049444  27.961667</gml:posList>
+                                                                        </gml:GeodesicString>
+                                                                    </gml:segments>
+                                                                </aixm:Curve> 
+                                                             </gml:curveMember>  
+                                                        </gml:Ring>
+                                                    </gml:exterior>
+                                                </gml:PolygonPatch>
+                                            </gml:patches>
+                                        </aixm:Surface>
+                                    </aixm:horizontalProjection>
+                                </aixm:AirspaceVolume>
+                            </aixm:theAirspaceVolume>
+                        </aixm:AirspaceGeometryComponent>
+                    </aixm:geometryComponent>
+                </aixm:AirspaceTimeSlice>
+            </aixm:timeSlice>
+        </aixm:Airspace>
+    </hasMember>
+    
+</AIXMBasicMessage>
